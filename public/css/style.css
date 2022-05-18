@@ -1,0 +1,21 @@
+body {
+    background-color: brown;
+}
+
+.topo {
+    background: #C3CFD9;
+    height: 75px;
+    width: 100%;
+    top: 0;
+    position: absolute;
+}
+
+.title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 35px;
+    color: #E8833A;
+    text-align: center;
+    margin-top: 20px;
+}
