@@ -1,11 +1,9 @@
-
-
 .topo {
     background: #C3CFD9;
     height: 75px;
     width: 100%;
     top: 0;
-    position:absolute;
+    position: fixed;
 }
 
 .title {
@@ -16,4 +14,58 @@
     color: #E8833A;
     text-align: center;
     margin-top: 20px;
+}
+
+.subtitulo {
+    margin-top: 90px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+.filme{
+    margin-top: 15px;
+    display: inline-block;
+}
+.catalogo{
+    width: 130px;
+    height: 170px;
+    padding: 30px;
+    
+}
+.daysAndTime{
+    margin-top: 20px;
+}
+.hora{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.caixinhaTime{
+     background: #E8833A;
+    border-radius: 3px;
+    width: 80px;
+    height: 40px;
+    margin-left: 15px;
+    text-decoration: none;
+    
+  
+    
+
+}
+.horario{
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+}
+.day{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+margin-left: 15px;
+
 }
