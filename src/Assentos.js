@@ -40,14 +40,32 @@ export default function Assentos() {
         const promise = axios.get(`https://mock-api.driven.com.br/api/v5/cineflex/showtimes/${idSessao}/seats`)
         promise.then(resposta => setSessao(resposta.data))
     }, [])
-    console.log(sessao)
+
+        const [nome, setNome] = useState("");
+        const [cpf, setCpf] = useState("");
+
+        const [selecionados, setSelecionados]=useState([])
+        function Selecionado(valor){
+            setSelecionados([...valor])
+        }
+        function RemoveSelecionado(valor){
+            setSelecionados(selecionados.filter((value)=> valor != value))
+            
+        }
+
+       function Dados(event){
+        event.preventDefault()
+           const requisicao = axios.post('https://mock-api.driven.com.br/api/v5/cineflex/seats/book-many',{ids:selecionados, name: nome, cpf: cpf})
+       }
+    
+   
     return (
         <>
             <div className="subtitulo">
                 Selecione o(s) assento(s)
             </div>
             <div className="todosAssentos">
-                {sessao.seats.map((cadeiras, index) => <Chair chair={cadeiras} key={index} />)}
+                {sessao.seats.map((cadeiras, index) => <Chair chair={cadeiras} key={index} selecionado={Selecionado} remove={RemoveSelecionado}/>)}
             </div>
             <div className="status">
                 <div className="statusname">
@@ -65,15 +83,17 @@ export default function Assentos() {
 
             </div>
             <Footer time={sessao.movie} />
-            <div className="inputs">
+            
+            <form className="inputs" onSubmit={Dados}>
                 <div className="informacao">Nome do comprador :</div>
-                <input className="caixaInput" placeholder="Digite seu nome..." />
+                <input className="caixaInput" placeholder="Digite seu nome..." value={nome} onChange={e => setNome(e.target.value)} />
                 <div className="informacao">CPF do comprador :</div>
-                <input className="caixaInput" placeholder="Digite seu CPF..." />
+                <input className="caixaInput" placeholder="Digite seu CPF..." value={cpf} onChange={e => setCpf(e.target.value)}/>
                 <div className="reserva">
-                    <div className="reservarAssento">Reservar assento(s)</div>
+                    <button type="submit" className="reservarAssento">Reservar assento(s)</button>
                 </div>
-            </div>
+            </form>
+            
 
         </>
     )
