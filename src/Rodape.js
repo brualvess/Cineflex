@@ -1,17 +1,10 @@
 
-function Footer(props){
-    let {imagem} = props
+export default function Footer(props){
+    let {time} = props
     return(
         <div className="rodape">
-        <img src={imagem.posterURL}/>
-        <div className="subtitulo">{imagem.title}</div>
+        <img className="imgFooter" src={time.posterURL}/>
+        <div className="subtituloFooter">{time.title}</div>
     </div>
     )  
-}
-export default function Rodape(){
-    return(
-       <>
-       <Footer />
-       </>
-    )
 }

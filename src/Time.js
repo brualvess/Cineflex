@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import Rodape from "./Rodape";
+import Footer from "./Rodape";
 
 function Times(props){
     let {days} = props
@@ -31,12 +31,11 @@ function Session(props){
 
 export default function Time(){
     const { idFilme } = useParams();
-    const [time, setTime] = useState({days:[]})
+    const [time, setTime] = useState({days:[], posterURL:""})
     useEffect(()=>{
         const promise = axios.get(`https://mock-api.driven.com.br/api/v5/cineflex/movies/${idFilme}/showtimes`)
     promise.then(resposta => setTime(resposta.data))
     },[])
-    console.log(time)
     return(
         < >
         <div className="subtitulo">
@@ -47,7 +46,7 @@ export default function Time(){
        {time.days.map((sessoes,index)=> <Times days= {sessoes} key = {index}/> )}
        </div>
        </div>
-       <Rodape />
+       <Footer time={time} />
       </>
     )
 }

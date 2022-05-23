@@ -24,48 +24,201 @@
     font-size: 24px;
     text-align: center;
 }
-.filme{
+
+.filme {
     margin-top: 15px;
     display: inline-block;
 }
-.catalogo{
+
+.catalogo {
     width: 130px;
     height: 170px;
     padding: 30px;
-    
+
 }
-.daysAndTime{
+
+.daysAndTime {
     margin-top: 20px;
+    margin-bottom: 90px;
 }
-.hora{
+
+.hora {
     display: flex;
     justify-content: space-between;
     width: 50%;
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.caixinhaTime{
-     background: #E8833A;
+
+.caixinhaTime {
+    background: #E8833A;
     border-radius: 3px;
     width: 80px;
     height: 40px;
     margin-left: 15px;
     text-decoration: none;
-    
-  
-    
+
+
+
 
 }
-.horario{
+
+.horario {
     color: white;
     text-align: center;
     padding-top: 15px;
 }
-.day{
-    font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-margin-left: 15px;
 
+.day {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 15px;
+
+}
+
+.rodape {
+    background: #DFE6ED;
+    border: 1px solid #9EADBA;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    bottom: 0;
+    position: fixed;
+}
+
+.imgFooter {
+    width: 45px;
+    height: 60px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.subtituloFooter {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #293845;
+    margin-left: 8px;
+    margin-top: 30px;
+    text-align: center;
+
+
+}
+
+.todosAssentos {
+    display: grid;
+    grid-template-rows: 25px 25px 25px 25px 26px;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    grid-auto-columns: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.numeroAssentos {
+    background: #C3CFD9;
+    border: 1px solid #808F9D;
+    border-radius: 12px;
+    width: 20px;
+    height: 17px;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 5px;
+    align-self: center;
+}
+
+.indisponivel {
+    background: #FBE192;
+    border: 1px solid #F7C52B;
+}
+
+.selecionado {
+    background: #8DD7CF;
+    border: 1px solid #1AAE9E;
+}
+
+.status {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 15px;
+    margin-left: 20px;
+    align-self: center;
+    margin-left: 95px;
+
+}
+
+.palavra {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    color: #4E5A65;
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.statusname {
+    width: 40px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.inputs {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.informacao {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    align-self: flex-start;
+    margin-left: 35px;
+    margin-top: 15px;
+    color: #293845
+}
+
+.caixaInput {
+    width: 80%;
+    height: 35px;
+    align-self: center;
+    background: #FFFFFF;
+    border: 1px solid #D5D5D5;
+    border-radius: 3px;
+}
+
+::placeholder {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    color: #AFAFAF;
+
+}
+.reserva{
+    background: #E8833A;
+    border-radius: 3px;
+    width: 50%;
+    height: 40px;
+    margin-top: 50px;
+    align-self: center;
+   
+}
+.reservarAssento{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
 }
