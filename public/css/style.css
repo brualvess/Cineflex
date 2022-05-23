@@ -204,16 +204,18 @@
     color: #AFAFAF;
 
 }
-.reserva{
+
+.reserva {
     background: #E8833A;
     border-radius: 3px;
     width: 50%;
     height: 40px;
-    margin-top: 50px;
+    margin-top: 45px;
     align-self: center;
-   
+
 }
-.reservarAssento{
+
+.reservarAssento {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -221,4 +223,77 @@
     color: white;
     text-align: center;
     padding-top: 10px;
+    background: #E8833A;
+    border: none;
+}
+
+.sucesso {
+    margin-top: 95px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.fraseSucesso {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #247A6B;
+    text-align: center;
+    width: 40%;
+    align-self: center;
+}
+.info{
+    margin-top: 35px;
+    margin-left: 20px;
+}
+
+.titleinfo {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #293845;
+}
+.nomeF{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    color: #293845;
+    margin-top: 10px;
+}
+.dataH{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    color: #293845;
+}
+.fim{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 60px;
+    border-radius: 5px;
+    height: 50px;
+    text-decoration: none;
+
+}
+.home{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    background: #E8833A;
+    text-decoration: none;
+    width: 50%;
+    padding-top: 15px;
+    border-radius: 7px;
+   
 }
